@@ -1,17 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Base.Theme.Library">
+    <!-- Add these three styles inside <resources> in res/values/styles.xml -->
+
+    <style name="RecentChip">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginEnd">8dp</item>
-        <item name="android:background">@drawable/bg_chip</item>
-        <item name="android:paddingStart">14dp</item>
-        <item name="android:paddingEnd">14dp</item>
+        <item name="android:background">@drawable/bg_recent_chip</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
         <item name="android:paddingTop">3dp</item>
         <item name="android:paddingBottom">3dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="TrendingChip">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:background">@drawable/bg_trending_chip</item>
+        <item name="android:drawableStart">@drawable/ic_trending</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style name="GenreCard">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/bg_genre</item>
+        <item name="android:padding">10dp</item>
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">12sp</item>
     </style>
-
 </resources>
