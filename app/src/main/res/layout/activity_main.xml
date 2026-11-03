@@ -119,7 +119,7 @@
                     android:textStyle="bold" />
             </LinearLayout>
 
-            <!-- ===== Banner ===== -->
+
             <ImageView
                 android:id="@+id/imgBanner"
                 android:layout_width="match_parent"
@@ -140,29 +140,15 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <TextView
-                        style="@style/CategoryChip"
-                        android:text="All" />
-
-                    <TextView
-                        style="@style/CategoryChip"
-                        android:text="Comic" />
-
-                    <TextView
-                        style="@style/CategoryChip"
-                        android:text="History" />
-
-                    <TextView
-                        style="@style/CategoryChip"
-                        android:text="Fantasy" />
-
-                    <TextView
-                        style="@style/CategoryChip"
-                        android:text="Mystery" />
+                    <Button android:id="@+id/btnAll"     style="@style/CategoryButton" android:text="All" />
+                    <Button android:id="@+id/btnComic"   style="@style/CategoryButton" android:text="Comic" />
+                    <Button android:id="@+id/btnHistory" style="@style/CategoryButton" android:text="History" />
+                    <Button android:id="@+id/btnFantasy" style="@style/CategoryButton" android:text="Fantasy" />
+                    <Button android:id="@+id/btnMystery" style="@style/CategoryButton" android:text="Mystery" />
                 </LinearLayout>
             </HorizontalScrollView>
 
-            <!-- ===== New Book ===== -->
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -266,9 +252,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#F5F2EE"
-        app:itemIconTint="#0000"
-        app:itemTextColor="#0000"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottom_nav_menu" />
-
 </LinearLayout>

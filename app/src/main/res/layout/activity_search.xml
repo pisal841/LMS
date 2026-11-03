@@ -39,7 +39,7 @@
             <ImageView
                 android:layout_width="24dp"
                 android:layout_height="24dp"
-                android:src="@drawable/ic_search" />
+                android:src="@drawable/search" />
 
             <EditText
                 android:id="@+id/edtSearch"
@@ -69,11 +69,11 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <TextView style="@style/CategoryChip" android:text="All" />
-            <TextView style="@style/CategoryChip" android:text="Comic" />
-            <TextView style="@style/CategoryChip" android:text="History" />
-            <TextView style="@style/CategoryChip" android:text="Fantasy" />
-            <TextView style="@style/CategoryChip" android:text="Mystery" />
+            <Button android:id="@+id/btnAll"     style="@style/CategoryButton" android:text="All" />
+            <Button android:id="@+id/btnComic"   style="@style/CategoryButton" android:text="Comic" />
+            <Button android:id="@+id/btnHistory" style="@style/CategoryButton" android:text="History" />
+            <Button android:id="@+id/btnFantasy" style="@style/CategoryButton" android:text="Fantasy" />
+            <Button android:id="@+id/btnMystery" style="@style/CategoryButton" android:text="Mystery" />
         </LinearLayout>
     </HorizontalScrollView>
 

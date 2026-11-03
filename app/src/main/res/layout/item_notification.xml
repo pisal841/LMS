@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Card color is set per item in the adapter with:
+     cardRoot.setBackgroundTintList(ColorStateList.valueOf(color));
+     Colors from the design: #EF6A6A red, #EE6CEE pink, #6BB6EE blue, #A39A96 gray -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    android:backgroundTint="#EF6A6A"
+    android:background="@drawable/bg_notification_card"
+    android:padding="14dp">
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:src="@drawable/ic_clock" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/imgIcon"
+        android:text="Book title"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_toStartOf="@id/btnClose"
+        android:text="Yesterday"
+        android:textColor="#FFFFFF"
+        android:textSize="8sp" />
+
+    <ImageView
+        android:id="@+id/btnClose"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_close" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/imgIcon"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="10sp" />
+</RelativeLayout>

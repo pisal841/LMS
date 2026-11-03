@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="Base.Theme.Library" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">#FFFFFF</item>
+    </style>
+
+    <style name="Theme.Library" parent="Base.Theme.Library" />
 
     <!-- Add these three styles inside <resources> in res/values/styles.xml -->
 
@@ -39,5 +44,23 @@
         <item name="android:padding">10dp</item>
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:textSize">12sp</item>
+    </style>
+    <style name="CategoryButton" parent="Widget.Material3.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:backgroundTint">#1A0DAB</item>
+        <item name="cornerRadius">12dp</item>
     </style>
 </resources>
